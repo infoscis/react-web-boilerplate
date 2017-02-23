@@ -1,11 +1,19 @@
 var React = require('react');
-var Contents = React.createClass({
-  render: function () {
+var Header = require('./Header.react');
+var Contents = require('./Contents.react');
+
+var Container = React.createClass({
+  render: function() {
     return ( 
-      <h1>This is Contents...</h1> 
+      <section class='container'>
+        <Header />
+        <hr/>
+        <Contents />
+      </section>
     );
   },
-  /*
+
+	/*
     마운트 단계 메소드.
     가장 먼저 실행.
     React가 컴포넌트를 DOM에 삽입하기 전에 실행.
@@ -71,4 +79,4 @@ var Contents = React.createClass({
 
 });
 
-module.exports = Contents;
+module.exports = Container;

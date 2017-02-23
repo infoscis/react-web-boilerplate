@@ -1,8 +1,8 @@
 var React = require('react');
-var Contents = React.createClass({
-  render: function () {
+var Header = React.createClass({
+  render: function() {
     return ( 
-      <h1>This is Contents...</h1> 
+      <h1>This is a header</h1>
     );
   },
   /*
@@ -13,6 +13,7 @@ var Contents = React.createClass({
     컴포넌트에 상태를 갖도록 하려면, 이메소드를 사용해 컴포넌트의 상태(this.state)를 반환.
   */
   getInitialState: function () {
+    console.log ('Header.getInitialState was called');
     return null;
   },
 
@@ -71,4 +72,4 @@ var Contents = React.createClass({
 
 });
 
-module.exports = Contents;
+module.exports = Header;
