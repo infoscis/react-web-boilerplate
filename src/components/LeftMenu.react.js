@@ -1,8 +1,6 @@
 import React from 'react';
-import LeftMenu from './LeftMenu.react'
-import Col from 'react-bootstrap/lib/Col';
 
-export default class Contents extends React.Component {
+class LeftMenu extends React.Component {
   constructor (props, context) {
     super(props, context);
     // this.state=null;
@@ -11,17 +9,11 @@ export default class Contents extends React.Component {
   render () {
     return ( 
       <div>
-        <Col sm={6} md={3}>
-          <LeftMenu />
-        </Col>
-        <Col sm={18} md={9}>
-          This is post area
-        </Col>
+        This is a left menu area.
       </div>
     );
   }
-  
-  
+   
 
   /*
     마운트 단계 메소드
@@ -77,3 +69,5 @@ export default class Contents extends React.Component {
   componentDidUpdate (prevProps, prevState) {}
 
 };
+
+export default LeftMenu;
