@@ -1,6 +1,6 @@
 import React from 'react';
-import LeftMenu from './LeftMenu.react'
-import Col from 'react-bootstrap/lib/Col';
+import LeftMenu from './LeftMenu.react';
+import {Col, Row, Jumbotron, Panel, Form, ListGroup, ListGroupItem, PanelBody} from 'react-bootstrap';
 
 export default class Contents extends React.Component {
   constructor (props, context) {
@@ -11,12 +11,28 @@ export default class Contents extends React.Component {
   render () {
     return ( 
       <div>
-        <Col sm={6} md={3}>
-          <LeftMenu />
-        </Col>
-        <Col sm={18} md={9}>
-          This is post area
-        </Col>
+        <Jumbotron>
+          <p>이곳은 제가 공부하거나 조사한 자료를 정리하고자 만든 공간입니다.</p>
+          <p>개발자 일을 하면서 항상 많은 자료를 인터넷에서 찾곤 했습니다. 대부분 Google에서 영문 자료를 찾고, 몇번씩 읽고 이해를 했지만, 막상 프로그램에 반영할려고 하면 또 집중해서 영문 자료를 읽고 이해를 해야 했습니다.</p>
+          <p>어느날인가 문득 내가 이해한 내용을 정리해서 메모를 해둘 곳을 하나 만들어야지 생각했습니다. 계속 맘만 먹고 있다가 React도 공부할겸 Github page를 만들기로 했습니다.</p>
+          <p>이 사이트의 목적은 기록 보관과 지식의 전파입니다. 다른 블로거들 처럼 예쁘고 화려하게 만들면 좋겠지만, 크게 신경쓰지 않을 예정입니다. 더해서 다른 개발자에게 도움을 줄수 있으면 좋겠습니다.</p>
+        </Jumbotron>
+        <Form>
+          <Panel collapsible defaultExpanded header="Java">
+            <ListGroup fill>
+              <ListGroupItem>JDK 9 Preview</ListGroupItem>
+              <ListGroupItem>Riding on the Narthorn</ListGroupItem>
+              <ListGroupItem>Item 2</ListGroupItem>
+            </ListGroup>
+          </Panel>
+          <Panel collapsible defaultExpanded header="Hadoop">
+            <ListGroup fill>
+              <ListGroupItem>Yarn Sample</ListGroupItem>
+              <ListGroupItem>Map-Reduce</ListGroupItem>
+            </ListGroup>
+          </Panel>
+          
+        </Form>
       </div>
     );
   }

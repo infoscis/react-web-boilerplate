@@ -34,7 +34,7 @@ module.exports = {
           loader: 'style-loader!css-loader'
         },
         {
-          test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+          test: /\.(jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)$/, 
           loader: 'url-loader?limit=8192' // inline base64 URLs for <=8k images, direct URLs for the rest
         } 
       ]

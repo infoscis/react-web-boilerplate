@@ -1,11 +1,6 @@
 import React from 'react';
-// import Navbar from 'react-bootstrap/lib/Navbar';
-// import Nav from 'react-bootstrap/lib/Nav';
-// import NavItem from 'react-bootstrap/lib/NavItem';
-// import NavDropdown from 'react-bootstrap/lib/NavDropdown';
-// import MenuItem from 'react-bootstrap/lib/MenuItem';
-// import PageHeader from 'react-bootstrap/lib/PageHeader';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem, PageHeader} from 'react-bootstrap'
+import './Header.react.scss';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, PageHeader} from 'react-bootstrap';
 
 export default class Header extends React.Component {
   constructor (props, context) {
